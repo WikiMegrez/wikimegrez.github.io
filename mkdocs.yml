@@ -1,0 +1,33 @@
+site_name: WikiMegrez Documentation
+
+nav:
+  - Home: 'index.md'
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+plugins:
+  - search
+
+repo_url: https://github.com/WikiMegrez
+
+repo_name: WikiMegrez
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
